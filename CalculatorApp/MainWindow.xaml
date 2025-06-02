@@ -6,10 +6,6 @@
         xmlns:local="clr-namespace:CalculatorApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="300">
-    <Window.Resources>
-        <SolidColorBrush x:Key="numbersColor" Color="#444444" />
-        <SolidColorBrush x:Key="operatorsColor" Color="Orange" />
-    </Window.Resources>
     
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
@@ -36,51 +32,53 @@
         <Button Content="%" Margin="5" Grid.Row="1" Grid.Column="2" x:Name="btnPercentage"/>
         <Button Content="/" Click="OperatinBtn_Click" Margin="5" 
                 Grid.Row="1" Grid.Column="3" x:Name="btnDivide"
-                Background="{StaticResource operatorsColor}" Foreground="White"
+                Background="{StaticResource operatorsColor}" 
+                Foreground="{StaticResource forgroundColor}"
                 />
 
         <Button Content="7" Margin="5" Grid.Row="2" x:Name="btn7" 
                 Click="btnNumber_Click" 
-                Background="{StaticResource numbersColor}" Foreground="White"
+                Background="{StaticResource numbersColor}" 
+                Foreground="{StaticResource forgroundColor}"
                 />
-        <Button Content="8" Click="btnNumber_Click" Margin="5" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="8" Click="btnNumber_Click" Margin="5" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Grid.Row="2" Grid.Column="1" x:Name="btn8"/>
-        <Button Content="9" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="9" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Click="btnNumber_Click" Margin="5" Grid.Row="2" Grid.Column="2" x:Name="btn9"/>
         <Button Content="*" Click="OperatinBtn_Click" Margin="5" 
                 Grid.Row="2" Grid.Column="3" x:Name="btnMultiply"
-                Background="{StaticResource operatorsColor}" Foreground="White"
+                Background="{StaticResource operatorsColor}" Foreground="{StaticResource forgroundColor}"
                 />
 
-        <Button Content="4" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="4" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Click="btnNumber_Click" Margin="5" Grid.Row="3" x:Name="btn4" />
-        <Button Content="5" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="5" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Click="btnNumber_Click" Margin="5" Grid.Row="3" Grid.Column="1" x:Name="btn5"/>
-        <Button Content="6" Background="{StaticResource numbersColor}" Foreground="White" 
+        <Button Content="6" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}" 
                 Click="btnNumber_Click" Margin="5" Grid.Row="3" Grid.Column="2" x:Name="btn6"/>
         <Button Content="-" Click="OperatinBtn_Click" Margin="5" 
                 Grid.Row="3" Grid.Column="3" x:Name="btnMinus" 
-                Background="{StaticResource operatorsColor}" Foreground="White"
+                Background="{StaticResource operatorsColor}" Foreground="{StaticResource forgroundColor}"
                 />
 
-        <Button Content="1" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="1" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Click="btnNumber_Click" Margin="5" Grid.Row="4" x:Name="btn1"/>
-        <Button Content="2" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="2" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Click="btnNumber_Click" Margin="5" Grid.Row="4" Grid.Column="1" x:Name="btn2"/>
-        <Button Content="3" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="3" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Click="btnNumber_Click" Margin="5" Grid.Row="4" Grid.Column="2" x:Name="btn3"/>
         <Button Content="+" Click="OperatinBtn_Click" Margin="5"
                 Grid.Row="4" Grid.Column="3" x:Name="btnPlus"
-                Background="{StaticResource operatorsColor}" Foreground="White"
+                Background="{StaticResource operatorsColor}" Foreground="{StaticResource forgroundColor}"
                 />
 
-        <Button Content="0" Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="0" Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Click="btnNumber_Click" Margin="5" Grid.Row="5" Grid.ColumnSpan="2" x:Name="btn0"/>
-        <Button Content="." Background="{StaticResource numbersColor}" Foreground="White"
+        <Button Content="." Background="{StaticResource numbersColor}" Foreground="{StaticResource forgroundColor}"
                 Margin="5" Grid.Row="5" Grid.Column="2" x:Name="btnDot" Click="btnDot_Click"/>
         <Button Content="=" Margin="5" Grid.Row="5" 
                 Grid.Column="3" x:Name="btnEqual"
-                Background="{StaticResource operatorsColor}" Foreground="White"
+                Background="{StaticResource operatorsColor}" Foreground="{StaticResource forgroundColor}"
                 />
 
     </Grid>
